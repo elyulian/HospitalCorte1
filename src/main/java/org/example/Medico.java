@@ -5,6 +5,7 @@ public class Medico extends Persona{
     La aplicación a desarrollar debe permitir:
     Empleado por Planilla: salario mensual, porcentaje adicional por hora extra.*/
 
+    private int codigoMedico;
     private String especialidad;
     private String servicio;
     private int numeroConsultorio;
@@ -13,7 +14,8 @@ public class Medico extends Persona{
     public Medico() {
     }
 
-    public Medico(String especialidad, String servicio, int numeroConsultorio, int salario, int porcentajeAdicionalHoraExtra) {
+    public Medico(int codigoMedico, String especialidad, String servicio, int numeroConsultorio, int salario, int porcentajeAdicionalHoraExtra) {
+        this.codigoMedico = codigoMedico;
         this.especialidad = especialidad;
         this.servicio = servicio;
         this.numeroConsultorio = numeroConsultorio;
@@ -21,13 +23,22 @@ public class Medico extends Persona{
         this.porcentajeAdicionalHoraExtra = porcentajeAdicionalHoraExtra;
     }
 
-    public Medico(int numeroDni, String nombre, String apellido, String fechaNacimiento, String direccion, String ciudad, String especialidad, String servicio, int numeroConsultorio, int salario, int porcentajeAdicionalHoraExtra) {
+    public Medico(int numeroDni, String nombre, String apellido, String fechaNacimiento, String direccion, String ciudad, int codigoMedico, String especialidad, String servicio, int numeroConsultorio, int salario, int porcentajeAdicionalHoraExtra) {
         super(numeroDni, nombre, apellido, fechaNacimiento, direccion, ciudad);
+        this.codigoMedico = codigoMedico;
         this.especialidad = especialidad;
         this.servicio = servicio;
         this.numeroConsultorio = numeroConsultorio;
         this.salario = salario;
         this.porcentajeAdicionalHoraExtra = porcentajeAdicionalHoraExtra;
+    }
+
+    public int getCodigoMedico() {
+        return codigoMedico;
+    }
+
+    public void setCodigoMedico(int codigoMedico) {
+        this.codigoMedico = codigoMedico;
     }
 
     public String getEspecialidad() {

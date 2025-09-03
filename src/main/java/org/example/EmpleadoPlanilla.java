@@ -11,7 +11,6 @@ Empleado Eventual: honorarios por hora, número de horas totales (normales + ext
     * */
     private double honorariosPorHora;
     private int numeroHorasTotalesTrabajadas;
-    private String fechaTerminoContrato;
 
 
     public EmpleadoPlanilla() {
@@ -23,7 +22,6 @@ Empleado Eventual: honorarios por hora, número de horas totales (normales + ext
         super(numeroDni, nombre, apellido, fechaNacimiento, direccion, ciudad, numeroEmpleado, cargo, salario);
         this.honorariosPorHora = honorariosPorHora;
         this.numeroHorasTotalesTrabajadas = numeroHorasTotalesTrabajadas;
-        this.fechaTerminoContrato = fechaTerminoContrato;
     }
 
     public void setHonorariosPorHora(double honorariosPorHora) {
@@ -34,9 +32,7 @@ Empleado Eventual: honorarios por hora, número de horas totales (normales + ext
         this.numeroHorasTotalesTrabajadas = numeroHorasTotalesTrabajadas;
     }
 
-    public void setFechaTerminoContrato(String fechaTerminoContrato) {
-        this.fechaTerminoContrato = fechaTerminoContrato;
-    }
+
 
     public double getHonorariosPorHora() {
         return honorariosPorHora;
@@ -46,16 +42,12 @@ Empleado Eventual: honorarios por hora, número de horas totales (normales + ext
         return numeroHorasTotalesTrabajadas;
     }
 
-    public String getFechaTerminoContrato() {
-        return fechaTerminoContrato;
-    }
 
     @Override
     public String toString() {
         return "EmpleadoPlanilla{" +
                 "honorariosPorHora=" + honorariosPorHora +
                 ", numeroHorasTotalesTrabajadas=" + numeroHorasTotalesTrabajadas +
-                ", fechaTerminoContrato='" + fechaTerminoContrato + '\'' +
                 '}';
     }
 }

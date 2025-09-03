@@ -7,21 +7,29 @@ public class Cita {
     private String apellidoPaciente;
     private String fecha;
     private String servicio;
-    private Medico medico;
     private String hora;
-
+    private int codMedico;
     public Cita() {
     }
 
-    public Cita(String numeroCita, String nombrePaciente, String apellidoPaciente, String fecha, String servicio, Medico medico, String hora) {
+    public Cita(String numeroCita, String nombrePaciente, String apellidoPaciente, String fecha, String servicio, String hora, int codMedico) {
         this.numeroCita = numeroCita;
         this.nombrePaciente = nombrePaciente;
         this.apellidoPaciente = apellidoPaciente;
         this.fecha = fecha;
         this.servicio = servicio;
-        this.medico = medico;
         this.hora = hora;
+        this.codMedico = codMedico;
     }
+
+    public int getCodMedico() {
+        return codMedico;
+    }
+
+    public void setCodMedico(int codMedico) {
+        this.codMedico = codMedico;
+    }
+
 
     public String getNumeroCita() {
         return numeroCita;
@@ -43,9 +51,6 @@ public class Cita {
         return servicio;
     }
 
-    public Medico getMedico() {
-        return medico;
-    }
 
     public String getHora() {
         return hora;
@@ -71,9 +76,6 @@ public class Cita {
         this.servicio = servicio;
     }
 
-    public void setMedico(Medico medico) {
-        this.medico = medico;
-    }
 
     public void setHora(String hora) {
         this.hora = hora;
