@@ -4,13 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         List<Empleado> empleados = new ArrayList<>();
         List<Paciente> pacientes = new ArrayList<>();
         List<Medico> medicos = new ArrayList<>();
+
 
         Medico medico1 = new Medico(1004233, "Julian", "Herrera", "09/09/2001", "cll 8 #1a", "Madrid", "Cirujano", "Cirujia", 315, 25000000, 10);
         Medico medico2 = new Medico(32130, "Sebastian", "Ortiz", "09/09/2001", "cll 8 #1a", "Madrid", "Oftamologo", "Oftamologia", 316, 26000000, 10);
